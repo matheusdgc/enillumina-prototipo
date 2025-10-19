@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://enillumina.com.br/sitemap.xml
+
+# Disallow admin areas (se houver no futuro)
+# Disallow: /admin/
+# Disallow: /api/
+
+# Allow specific paths
+Allow: /#inicio
+Allow: /#sobre
+Allow: /#servicos
+Allow: /#depoimentos
+Allow: /#contato
