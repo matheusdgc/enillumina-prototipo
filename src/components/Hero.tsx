@@ -1,6 +1,7 @@
 import Button from "./ui/Button";
 import FeatureItem from "./ui/FeatureItem";
 import { AuroraBackground } from "./ui/aurora-background";
+import Image from "next/image";
 
 export default function Hero() {
   const features = [
@@ -75,10 +76,22 @@ export default function Hero() {
         <div className="container mx-auto px-4 sm:px-6 relative z-10 w-full">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10 sm:gap-12 lg:gap-16">
             <div className="flex-1 text-center lg:text-left w-full">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-semibold text-[#4a2767] mb-6 sm:mb-8 leading-tight tracking-wide">
-                Bem-vindo à{" "}
-                <span className="text-[#c3a681] italic">Enillumina</span>
-              </h1>
+              <div className="mb-6 sm:mb-8">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-[#4a2767] mb-4 sm:mb-5 leading-relaxed">
+                  Bem-vindo à
+                </h1>
+                <div className="flex justify-center lg:justify-start">
+                  <Image
+                    src="/logo-txt-vetor-purple.png"
+                    alt="Enillumina"
+                    width={350}
+                    height={88}
+                    className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 w-auto object-contain drop-shadow-sm"
+                    priority
+                    quality={95}
+                  />
+                </div>
+              </div>
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-[#666666] mb-8 sm:mb-10 leading-relaxed font-light max-w-2xl mx-auto lg:mx-0">
                 Um espaço acolhedor e profissional dedicado ao seu bem-estar
                 emocional e mental. Aqui, você encontra apoio especializado para
