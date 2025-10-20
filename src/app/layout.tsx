@@ -22,7 +22,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://enillumina.com.br"),
-  title: "Enillumina - Terapia Integrativas e Bem-Estar",
+  title: "Enillumina - Terapia Integrativa e Bem-Estar",
   description:
     "Centro de terapia integrativa especializado em equilíbrio emocional, espiritual e energético. Descubra o caminho para seu bem-estar.",
   keywords: [
