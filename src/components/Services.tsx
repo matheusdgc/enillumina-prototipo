@@ -20,10 +20,15 @@ export default function Services() {
           />
         </svg>
       ),
-      title: "Terapia Individual",
+      title: "Constelação Familiar",
       description:
-        "Atendimento personalizado focado em suas necessidades específicas, promovendo autoconhecimento e desenvolvimento pessoal.",
-      features: ["Ansiedade", "Depressão", "Autoestima", "Relacionamentos"],
+        "Descubra a Constelação Familiar para harmonizar suas relações e desbloquear seu potencial.",
+      features: [
+        "Padrões Familiares",
+        "Relacionamentos",
+        "Ancestralidade",
+        "Vínculos",
+      ],
     },
     {
       icon: (
@@ -37,56 +42,19 @@ export default function Services() {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+            d="M13 10V3L4 14h7v7l9-11h-7z"
           />
         </svg>
       ),
-      title: "Terapia de Casal",
+      title: "Apometria",
       description:
-        "Fortalecimento dos vínculos afetivos, melhoria da comunicação e resolução de conflitos no relacionamento.",
-      features: ["Comunicação", "Conflitos", "Intimidade", "Projetos futuros"],
-    },
-    {
-      icon: (
-        <svg
-          className="w-8 h-8"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-          />
-        </svg>
-      ),
-      title: "Terapia Familiar",
-      description:
-        "Harmonização das relações familiares, promovendo diálogo e compreensão entre os membros da família.",
-      features: ["Convivência", "Limites", "Educação", "Vínculos"],
-    },
-    {
-      icon: (
-        <svg
-          className="w-8 h-8"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-      ),
-      title: "Terapia Infantil",
-      description:
-        "Acompanhamento especializado para crianças, utilizando técnicas lúdicas e adequadas para cada faixa etária.",
-      features: ["Desenvolvimento", "Comportamento", "Emoções", "Aprendizagem"],
+        "Explore a prática da Apometria para liberar bloqueios energéticos e promover equilíbrio interior.",
+      features: [
+        "Limpeza Energética",
+        "Bloqueios",
+        "Equilíbrio",
+        "Harmonização",
+      ],
     },
     {
       icon: (
@@ -104,10 +72,10 @@ export default function Services() {
           />
         </svg>
       ),
-      title: "Orientação Profissional",
+      title: "Hipnose",
       description:
-        "Apoio na tomada de decisões relacionadas à carreira, identificação de habilidades e planejamento profissional.",
-      features: ["Carreira", "Vocação", "Transição", "Objetivos"],
+        "Mergulhe na experiência da Hipnose para acessar seu subconsciente e promover mudanças positivas duradouras.",
+      features: ["Subconsciente", "Hábitos", "Fobias", "Autocontrole"],
     },
     {
       icon: (
@@ -125,10 +93,52 @@ export default function Services() {
           />
         </svg>
       ),
-      title: "Grupos Terapêuticos",
+      title: "Regressão",
       description:
-        "Sessões em grupo que promovem troca de experiências, apoio mútuo e crescimento coletivo.",
-      features: ["Compartilhamento", "Empatia", "Apoio", "Conexão"],
+        "Reviva a regressão para explorar suas raízes profundas e promover cura emocional e autoconhecimento.",
+      features: ["Memórias", "Traumas", "Vidas Passadas", "Cura Emocional"],
+    },
+    {
+      icon: (
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      ),
+      title: "Práticas Xamânicas",
+      description:
+        "Vivencie práticas Xamânicas para conectar-se com sua essência e abrir caminhos para a expansão espiritual.",
+      features: ["Conexão Espiritual", "Natureza", "Rituais", "Expansão"],
+    },
+    {
+      icon: (
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+          />
+        </svg>
+      ),
+      title: "Mandalas",
+      description:
+        "Aprecie a magia dos Mandalas para harmonizar sua energia e promover bem-estar e autodescoberta.",
+      features: ["Harmonização", "Criatividade", "Meditação", "Equilíbrio"],
     },
   ];
 

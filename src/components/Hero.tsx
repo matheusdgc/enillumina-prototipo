@@ -22,26 +22,7 @@ export default function Hero() {
         </svg>
       ),
       title: "Acolhimento",
-      description: "Ambiente seguro e confortável",
-    },
-    {
-      icon: (
-        <svg
-          className="w-6 h-6 text-white"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-          />
-        </svg>
-      ),
-      title: "Profissionalismo",
-      description: "Equipe qualificada e experiente",
+      description: "Atendimento seguro para sua jornada",
     },
     {
       icon: (
@@ -60,7 +41,26 @@ export default function Hero() {
         </svg>
       ),
       title: "Transformação",
-      description: "Resultados reais e duradouros",
+      description: "Reconexão com sua essência",
+    },
+    {
+      icon: (
+        <svg
+          className="w-6 h-6 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+          />
+        </svg>
+      ),
+      title: "Autoconhecimento",
+      description: "Desperte seu potencial interior",
     },
   ];
 
@@ -88,21 +88,22 @@ export default function Hero() {
                     height={88}
                     className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 w-auto object-contain drop-shadow-sm"
                     priority
-                    quality={95}
+                    quality={100}
                   />
                 </div>
               </div>
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-[#666666] mb-8 sm:mb-10 leading-relaxed font-light max-w-2xl mx-auto lg:mx-0">
-                Um espaço acolhedor e profissional dedicado ao seu bem-estar
-                emocional e mental. Aqui, você encontra apoio especializado para
-                trilhar seu caminho de autoconhecimento e crescimento pessoal.
+                Atendimento dedicado ao acolhimento, transformação e reconexão
+                com a essência. Através de terapias integrativas, auxilio você a
+                ressignificar suas dores e iluminar seu próprio caminho de
+                autoconhecimento e crescimento pessoal.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center lg:justify-start max-w-md mx-auto lg:mx-0">
                 <Button href="#contato" size="lg">
-                  Agendar Consulta
+                  Agende sua Sessão
                 </Button>
                 <Button href="#servicos" variant="secondary" size="lg">
-                  Nossos Serviços
+                  Conheça as Terapias
                 </Button>
               </div>
             </div>

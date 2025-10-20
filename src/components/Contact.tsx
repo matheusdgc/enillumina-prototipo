@@ -29,7 +29,7 @@ export default function Contact() {
         </svg>
       ),
       title: "Telefone",
-      content: ["(11) 9999-9999", "Seg - Sex: 8h às 20h"],
+      content: ["(11) 94173-3744", "Seg - Sex: 8h às 20h"],
     },
     {
       icon: (
@@ -48,7 +48,7 @@ export default function Contact() {
         </svg>
       ),
       title: "Email",
-      content: ["contato@enillumina.com.br", "Respondemos em até 24h"],
+      content: ["contato@enillumina.com.br"],
     },
     {
       icon: (
@@ -72,8 +72,8 @@ export default function Contact() {
           />
         </svg>
       ),
-      title: "Endereço",
-      content: ["Rua Example, 123", "São Paulo - SP"],
+      title: "Atendimento",
+      content: ["Online", "Em breve, presencial"],
     },
     {
       icon: (
@@ -86,7 +86,7 @@ export default function Contact() {
         </svg>
       ),
       title: "WhatsApp",
-      content: ["(11) 99999-9999", "Atendimento rápido"],
+      content: ["(11) 94173-3744"],
       iconBgColor: "bg-[#25D366]",
     },
   ];
@@ -104,7 +104,7 @@ export default function Contact() {
         <SectionTitle
           title="Entre em"
           highlight="Contato"
-          subtitle="Estamos prontos para ajudá-lo. Entre em contato e agende sua primeira consulta."
+          subtitle="Estou pronta para te ajudar. Entre em contato e agende sua primeira consulta."
         />
 
         <div className="max-w-5xl mx-auto">

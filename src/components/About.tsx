@@ -1,20 +1,23 @@
 import IconCircle from "./ui/IconCircle";
 import FeatureItem from "./ui/FeatureItem";
+import Image from "next/image";
 
 export default function About() {
   const features = [
     {
-      title: "Atendimento Personalizado",
+      title: "Formação Multidisciplinar",
       description:
-        "Cada pessoa é única, e nosso atendimento respeita essa individualidade.",
+        "Combinação única de administração empresarial, desenvolvimento humano e terapias integrativas.",
     },
     {
-      title: "Ambiente Acolhedor",
-      description: "Espaço preparado para proporcionar conforto e segurança.",
+      title: "Abordagem Humanizada",
+      description:
+        "Atendimento que une técnica, sensibilidade e espiritualidade de forma profunda e acolhedora.",
     },
     {
-      title: "Profissionais Qualificados",
-      description: "Equipe com formação sólida e em constante atualização.",
+      title: "Experiência Comprovada",
+      description:
+        "Mais de uma década dedicada ao autoconhecimento e transformação pessoal.",
     },
   ];
 
@@ -45,32 +48,19 @@ export default function About() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           {}
-          <div className="flex-1">
-            <div className="relative">
-              <div className="bg-gradient-to-br from-[#f8f5ff] to-[#c3a681]/10 rounded-[2.5rem] p-10 shadow-2xl border border-[#c3a681]/20">
-                <div className="space-y-8">
-                  <IconCircle size="lg" className="mx-auto" variant="gradient">
-                    <svg
-                      className="w-12 h-12 text-white"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={1.5}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                      />
-                    </svg>
-                  </IconCircle>
-                  <h3 className="text-3xl font-serif font-semibold text-[#4a2767] text-center">
-                    Mais de 10 anos de experiência
-                  </h3>
-                  <p className="text-[#666666] text-center leading-relaxed text-lg">
-                    Dedicados a transformar vidas através da terapia humanizada
-                    e acolhedora
-                  </p>
+          <div className="flex-1 w-full">
+            <div className="relative max-w-md mx-auto lg:max-w-lg">
+              <div className="bg-gradient-to-br from-[#f8f5ff] to-[#c3a681]/10 rounded-[2.5rem] p-4 sm:p-6 shadow-2xl border border-[#c3a681]/20">
+                <div className="relative w-full aspect-[3/4] overflow-hidden rounded-[2rem]">
+                  <Image
+                    src="/foto-apresentacao.png"
+                    alt="Eni Aparecida Severo - Terapeuta"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 33vw"
+                    priority
+                    quality={90}
+                  />
                 </div>
               </div>
               {}
@@ -81,17 +71,29 @@ export default function About() {
           {}
           <div className="flex-1">
             <h2 className="text-4xl md:text-5xl font-serif font-semibold text-[#4a2767] mb-8">
-              Sobre a <span className="text-[#c3a681] italic">Enillumina</span>
+              Sobre <span className="text-[#c3a681] italic">Eni Severo</span>
             </h2>
             <p className="text-lg text-[#666666] mb-6 leading-relaxed">
-              A Enillumina é uma clínica de terapia comprometida em oferecer um
-              espaço seguro e acolhedor para quem busca equilíbrio emocional,
-              autoconhecimento e qualidade de vida.
+              Sou Eni Aparecida Severo, formada em Administração de Empresas
+              pela Faculdade de Economia São Luiz, com especializações em
+              Negociação e Qualidade Total, e ampla experiência nas áreas de
+              Recursos Humanos e Desenvolvimento Organizacional.
+            </p>
+            <p className="text-lg text-[#666666] mb-6 leading-relaxed">
+              Em minha trajetória, aprofundei-me no campo do autoconhecimento e
+              das terapias integrativas, com formações em Constelação Familiar
+              Sistêmica e Programação Neurolinguística (PNL) pelo Instituto Criz
+              Leanza, Pós-graduação em Psicanálise pela FAMART, Análise Corporal
+              pelo OCE, e Movimentos de Reconexão da Alma pelo Instituto
+              Estevão.
             </p>
             <p className="text-lg text-[#666666] mb-8 leading-relaxed">
-              Nossa abordagem integra diferentes técnicas terapêuticas, sempre
-              respeitando a individualidade de cada pessoa e seus processos
-              únicos de crescimento e transformação.
+              A partir dessa caminhada, nasceu a <b className="text-[#4a2767]">Enillumina</b>, um atendimento dedicado
+              ao acolhimento, à transformação e à reconexão com a essência. Meu
+              propósito é auxiliar cada pessoa a ressignificar suas dores e
+              iluminar seu próprio caminho, unindo técnica, sensibilidade e
+              espiritualidade em um processo profundo e humanizado de
+              desenvolvimento pessoal.
             </p>
 
             <div className="space-y-6 mt-10">

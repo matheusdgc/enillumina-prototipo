@@ -1,50 +1,67 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo, useCallback } from "react";
 
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const testimonials = [
-    {
-      name: "Maria Silva",
-      role: "Paciente há 2 anos",
-      content:
-        "A Enillumina transformou minha vida. Encontrei aqui um espaço seguro onde pude trabalhar minhas questões emocionais e crescer como pessoa. A empatia e profissionalismo da equipe são incomparáveis.",
-      rating: 5,
-    },
-    {
-      name: "João Santos",
-      role: "Terapia de casal",
-      content:
-        "Meu relacionamento estava em crise e a terapia de casal na Enillumina nos ajudou a resgatar o diálogo e o amor. Hoje somos um casal mais forte e unido. Muito obrigado!",
-      rating: 5,
-    },
-    {
-      name: "Ana Paula",
-      role: "Terapia individual",
-      content:
-        "Depois de anos lutando contra a ansiedade, finalmente encontrei ajuda profissional que realmente funciona. As sessões me deram ferramentas práticas para lidar com meus desafios diários.",
-      rating: 5,
-    },
-    {
-      name: "Carlos Eduardo",
-      role: "Orientação profissional",
-      content:
-        "A orientação profissional me ajudou a ter clareza sobre meu futuro e tomar decisões importantes na carreira. O apoio foi fundamental nesse momento de transição.",
-      rating: 5,
-    },
-  ];
+  const testimonials = useMemo(
+    () => [
+      {
+        name: "Maria Silva",
+        role: "Constelação Familiar",
+        content:
+          "A Constelação Familiar me ajudou a compreender padrões que se repetiam na minha vida. Eni conduziu a sessão com muita sensibilidade e profundidade. Hoje consigo me relacionar melhor com minha família e comigo mesma.",
+        rating: 5,
+      },
+      {
+        name: "João Santos",
+        role: "Apometria",
+        content:
+          "Sentia bloqueios energéticos que não conseguia explicar. Após as sessões de Apometria com a Eni, experimentei uma leveza e clareza mental que não sentia há anos. Processo transformador e libertador!",
+        rating: 5,
+      },
+      {
+        name: "Ana Paula",
+        role: "Hipnose",
+        content:
+          "Lutei anos contra a ansiedade e padrões limitantes. A Hipnose me permitiu acessar meu subconsciente de forma segura e trabalhar questões profundas. Mudanças reais e duradouras aconteceram na minha vida.",
+        rating: 5,
+      },
+      {
+        name: "Carlos Eduardo",
+        role: "Regressão",
+        content:
+          "A Regressão foi uma experiência reveladora. Consegui acessar memórias e compreender traumas que carregava sem entender. A cura emocional que vivenciei foi profunda e me trouxe muito autoconhecimento.",
+        rating: 5,
+      },
+      {
+        name: "Juliana Oliveira",
+        role: "Práticas Xamânicas",
+        content:
+          "As práticas xamânicas com a Eni me reconectaram com minha essência espiritual. Foi uma jornada de expansão da consciência e cura através da conexão com a natureza e forças ancestrais.",
+        rating: 5,
+      },
+      {
+        name: "Roberto Alves",
+        role: "Mandalas",
+        content:
+          "O trabalho com Mandalas me surpreendeu. Através da arte e da meditação, encontrei harmonização energética e equilíbrio interior. Um processo criativo e terapêutico ao mesmo tempo.",
+        rating: 5,
+      },
+    ],
+    []
+  );
 
-  const nextTestimonial = () => {
+  const nextTestimonial = useCallback(() => {
     setActiveIndex((prev) => (prev + 1) % testimonials.length);
-  };
+  }, [testimonials.length]);
 
-  const prevTestimonial = () => {
+  const prevTestimonial = useCallback(() => {
     setActiveIndex(
       (prev) => (prev - 1 + testimonials.length) % testimonials.length
     );
-  };
+  }, [testimonials.length]);
 
   return (
     <section
@@ -58,12 +75,12 @@ export default function Testimonials() {
         {}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif font-semibold text-[#4a2767] mb-6">
-            O que dizem nossos{" "}
-            <span className="text-[#c3a681] italic">Pacientes</span>
+            O que dizem{" "}
+            <span className="text-[#c3a681] italic">nossos clientes</span>
           </h2>
           <p className="text-lg text-[#666666] max-w-2xl mx-auto leading-relaxed">
-            Histórias reais de pessoas que transformaram suas vidas através da
-            terapia.
+            Histórias reais de pessoas que transformaram suas vidas através das
+            terapias integrativas.
           </p>
         </div>
 

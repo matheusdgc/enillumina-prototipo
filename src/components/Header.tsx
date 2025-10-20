@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,11 +9,20 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    let timeoutId: NodeJS.Timeout;
+
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        setIsScrolled(window.scrollY > 20);
+      }, 10);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(timeoutId);
+    };
   }, []);
 
   const menuItems = [
@@ -76,7 +85,7 @@ export default function Header() {
           </div>
 
           <button
-            className="lg:hidden text-[#4a2767] focus:outline-none p-2 -mr-2 touch-manipulation"
+            className="lg:hidden text-[#4a2767] focus:outline-none p-7 -mr-2 touch-manipulation"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Menu"
             aria-expanded={isMenuOpen}

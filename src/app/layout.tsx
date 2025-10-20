@@ -6,24 +6,27 @@ const cormorantGaramond = Cormorant_Garamond({
   variable: "--font-serif",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  preload: true,
+  fallback: ["serif"],
 });
 
 const montserrat = Montserrat({
   variable: "--font-sans",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
+  display: "swap",
+  preload: true,
+  fallback: ["system-ui", "sans-serif"],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://enillumina.com.br"),
-  title: "Enillumina - Terapia Holística e Bem-Estar",
+  title: "Enillumina - Terapia Integrativas e Bem-Estar",
   description:
-    "Centro de terapia holística especializado em equilíbrio emocional, espiritual e energético. Descubra o caminho para seu bem-estar.",
+    "Centro de terapia integrativa especializado em equilíbrio emocional, espiritual e energético. Descubra o caminho para seu bem-estar.",
   keywords: [
-    "terapia holística",
-    "terapia individual",
-    "terapia de casal",
-    "terapia familiar",
+    "terapia integrativa",
     "psicoterapia",
     "bem-estar emocional",
     "saúde mental",
@@ -44,9 +47,9 @@ export const metadata: Metadata = {
     apple: "/logo-simples-vetor.png",
   },
   openGraph: {
-    title: "Enillumina - Terapia Holística e Bem-Estar",
+    title: "Enillumina - Terapia Integrativa e Bem-Estar",
     description:
-      "Centro de terapia holística especializado em equilíbrio emocional, espiritual e energético. Agende sua consulta.",
+      "Centro de terapia integrativa especializado em equilíbrio emocional, espiritual e energético. Agende sua consulta.",
     url: "https://enillumina.com.br",
     siteName: "Enillumina",
     images: [
@@ -54,7 +57,7 @@ export const metadata: Metadata = {
         url: "/logo-completa-vetor.png",
         width: 800,
         height: 600,
-        alt: "Enillumina - Centro de Terapia Holística",
+        alt: "Enillumina - Centro de Terapia Integrativa",
       },
     ],
     locale: "pt_BR",
@@ -62,9 +65,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Enillumina - Terapia Holística e Bem-Estar",
+    title: "Enillumina - Terapia Integrativa e Bem-Estar",
     description:
-      "Centro de terapia holística especializado em equilíbrio emocional, espiritual e energético.",
+      "Centro de terapia integrativa especializado em equilíbrio emocional, espiritual e energético.",
     images: ["/logo-completa-vetor.png"],
     creator: "@enillumina",
   },
@@ -90,36 +93,12 @@ const jsonLd = {
   "@type": "MedicalBusiness",
   name: "Enillumina",
   description:
-    "Centro de terapia holística especializado em equilíbrio emocional, espiritual e energético.",
+    "Centro de terapia integrativa especializado em equilíbrio emocional, espiritual e energético.",
   url: "https://enillumina.com.br",
   logo: "https://enillumina.com.br/logo-completa-vetor.png",
   image: "https://enillumina.com.br/logo-completa-vetor.png",
-  telephone: "+55-11-99999-9999",
+  telephone: "+55-11-94173-3744",
   email: "contato@enillumina.com.br",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Rua Example, 123",
-    addressLocality: "São Paulo",
-    addressRegion: "SP",
-    postalCode: "00000-000",
-    addressCountry: "BR",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: "-23.5505",
-    longitude: "-46.6333",
-  },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "08:00",
-      closes: "20:00",
-    },
-  ],
-  priceRange: "$$",
-  currenciesAccepted: "BRL",
-  paymentAccepted: "Cash, Credit Card, Debit Card, PIX",
   sameAs: [
     "https://instagram.com/enillumina",
     "https://facebook.com/enillumina",

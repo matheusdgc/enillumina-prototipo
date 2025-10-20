@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -6,20 +7,27 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-[#2d1540] via-[#3d1f52] to-[#2d1540] text-white py-16 border-t-4 border-[#c3a681]">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12 text-center md:text-left">
           {}
-          <div className="space-y-4">
-            <h3 className="text-3xl font-serif font-bold text-white mb-4 drop-shadow-lg">
-              Enillumina
-            </h3>
-            <p className="text-gray-200 leading-relaxed text-base">
-              Clínica de terapia dedicada ao seu bem-estar emocional e
-              crescimento pessoal.
+          <div className="space-y-4 flex flex-col items-center md:items-start">
+            <div className="mb-2">
+              <Image
+                src="/logo-txt-vetor.png"
+                alt="Enillumina"
+                width={200}
+                height={50}
+                className="h-10 w-auto object-contain brightness-0 invert drop-shadow-lg"
+                quality={90}
+              />
+            </div>
+            <p className="text-gray-200 leading-relaxed text-base max-w-xs">
+              Atendimento dedicado ao acolhimento, transformação e reconexão com a
+              essência através de terapias integrativas.
             </p>
           </div>
 
           {}
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <h4 className="font-bold text-xl mb-5 text-white tracking-wide">
               Links Rápidos
             </h4>
@@ -27,7 +35,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#inicio"
-                  className="text-gray-200 hover:text-[#c3a681] hover:pl-2 transition-all duration-300 inline-block text-base"
+                  className="text-gray-200 hover:text-[#c3a681] md:hover:pl-2 transition-all duration-300 inline-block text-base"
                 >
                   Início
                 </a>
@@ -35,15 +43,15 @@ export default function Footer() {
               <li>
                 <a
                   href="#sobre"
-                  className="text-gray-200 hover:text-[#c3a681] hover:pl-2 transition-all duration-300 inline-block text-base"
+                  className="text-gray-200 hover:text-[#c3a681] md:hover:pl-2 transition-all duration-300 inline-block text-base"
                 >
-                  Sobre Nós
+                  Sobre Eni Severo
                 </a>
               </li>
               <li>
                 <a
                   href="#servicos"
-                  className="text-gray-200 hover:text-[#c3a681] hover:pl-2 transition-all duration-300 inline-block text-base"
+                  className="text-gray-200 hover:text-[#c3a681] md:hover:pl-2 transition-all duration-300 inline-block text-base"
                 >
                   Serviços
                 </a>
@@ -51,7 +59,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#depoimentos"
-                  className="text-gray-200 hover:text-[#c3a681] hover:pl-2 transition-all duration-300 inline-block text-base"
+                  className="text-gray-200 hover:text-[#c3a681] md:hover:pl-2 transition-all duration-300 inline-block text-base"
                 >
                   Depoimentos
                 </a>
@@ -59,7 +67,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#contato"
-                  className="text-gray-200 hover:text-[#c3a681] hover:pl-2 transition-all duration-300 inline-block text-base"
+                  className="text-gray-200 hover:text-[#c3a681] md:hover:pl-2 transition-all duration-300 inline-block text-base"
                 >
                   Contato
                 </a>
@@ -68,36 +76,40 @@ export default function Footer() {
           </div>
 
           {}
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <h4 className="font-bold text-xl mb-5 text-white tracking-wide">
-              Serviços
+              Terapias Integrativas
             </h4>
             <ul className="space-y-3">
               <li className="text-gray-200 text-base flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-[#c3a681] rounded-full"></span>
-                Terapia Individual
+                Constelação Familiar
               </li>
               <li className="text-gray-200 text-base flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-[#c3a681] rounded-full"></span>
-                Terapia de Casal
+                Apometria
               </li>
               <li className="text-gray-200 text-base flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-[#c3a681] rounded-full"></span>
-                Terapia Familiar
+                Hipnose
               </li>
               <li className="text-gray-200 text-base flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-[#c3a681] rounded-full"></span>
-                Terapia Infantil
+                Regressão
               </li>
               <li className="text-gray-200 text-base flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-[#c3a681] rounded-full"></span>
-                Orientação Profissional
+                Práticas Xamânicas
+              </li>
+              <li className="text-gray-200 text-base flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-[#c3a681] rounded-full"></span>
+                Mandalas
               </li>
             </ul>
           </div>
 
           {}
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <h4 className="font-bold text-xl mb-5 text-white tracking-wide">
               Contato
             </h4>
@@ -105,7 +117,7 @@ export default function Footer() {
               <li className="text-gray-200 text-base">
                 <a
                   href="tel:+5511999999999"
-                  className="hover:text-[#c3a681] transition-colors flex items-center gap-2 group"
+                  className="hover:text-[#c3a681] transition-colors flex items-center gap-2 group justify-center md:justify-start"
                 >
                   <svg
                     className="w-5 h-5 text-[#c3a681] group-hover:scale-110 transition-transform"
@@ -120,13 +132,13 @@ export default function Footer() {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  (11) 9999-9999
+                  (11) 94173-3744
                 </a>
               </li>
               <li className="text-gray-200 text-base">
                 <a
                   href="mailto:contato@enillumina.com.br"
-                  className="hover:text-[#c3a681] transition-colors flex items-center gap-2 group"
+                  className="hover:text-[#c3a681] transition-colors flex items-center gap-2 group justify-center md:justify-start"
                 >
                   <svg
                     className="w-5 h-5 text-[#c3a681] group-hover:scale-110 transition-transform"
@@ -147,11 +159,11 @@ export default function Footer() {
             </ul>
 
             {}
-            <div>
+            <div className="flex flex-col items-center md:items-start w-full">
               <h5 className="font-bold text-lg mb-4 text-white">
                 Redes Sociais
               </h5>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 justify-center md:justify-start">
                 <a
                   href="https://instagram.com"
                   target="_blank"

@@ -5,3 +5,4 @@ export { default as Icon } from "./Icon";
 export { default as IconCircle } from "./IconCircle";
 export { default as SectionTitle } from "./SectionTitle";
 export { default as ServiceCard } from "./ServiceCard";
+export * from "./Icons";

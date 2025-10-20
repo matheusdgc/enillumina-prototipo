@@ -24,12 +24,14 @@ export const AuroraBackground = ({
       {}
       <div className="absolute inset-0 overflow-hidden">
         <div
-          className="absolute inset-0 opacity-10"
+          className="absolute inset-0 opacity-10 gpu-accelerated"
           style={{
             background: `repeating-linear-gradient(100deg, #4a2767 10%, #c3a681 15%, #f8f5ff 60%, #d4b896 25%, #4a2767 30%)`,
             backgroundSize: "300% 100%",
             animation: "aurora 60s linear infinite",
             filter: "blur(60px)",
+            willChange: "background-position",
+            transform: "translateZ(0)",
           }}
         ></div>
       </div>
@@ -37,12 +39,14 @@ export const AuroraBackground = ({
       {}
       <div className="absolute inset-0 overflow-hidden">
         <div
-          className="absolute inset-0 opacity-50"
+          className="absolute inset-0 opacity-50 gpu-accelerated"
           style={{
             background: `repeating-linear-gradient(100deg, #c3a681 20%, #4a2767 30%, #f8f5ff 90%, #d4b896 80%, #c3a681 100%)`,
             backgroundSize: "200% 100%",
             animation: "aurora 45s linear infinite reverse",
             filter: "blur(40px)",
+            willChange: "background-position",
+            transform: "translateZ(0)",
           }}
         ></div>
       </div>
