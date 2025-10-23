@@ -1,6 +1,7 @@
 "use client";
 
 import ShaderBackground from "./ui/shader-background";
+import Image from "next/image";
 
 export default function DNA() {
   return (
@@ -17,8 +18,17 @@ export default function DNA() {
           {}
           <div className="mb-10 sm:mb-12 md:mb-16">
             <div className="inline-block">
-              <h2 className=" text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold text-[#c3a681] mb-4 sm:mb-5 leading-tight drop-shadow-2xl">
-                <span className="text-[#c3a681]">O DNA da <span className="font-bold">Enillumina</span></span>
+              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold text-[#c3a681] mb-4 sm:mb-5 leading-tight drop-shadow-2xl flex items-center justify-center gap-3 sm:gap-4 md:gap-6 flex-wrap">
+                <span className="text-[#c3a681]">O DNA da</span>
+                <Image
+                  src="/logo-simples-vetor.png"
+                  alt="Enillumina"
+                  width={80}
+                  height={80}
+                  className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 object-contain drop-shadow-2xl animate-pulse"
+                  quality={100}
+                />
+                <span className="font-bold">Enillumina</span>
               </h2>
               <div className="h-1 sm:h-1.5 bg-gradient-to-r from-transparent via-[#c3a681] to-transparent shadow-lg"></div>
             </div>

@@ -23,7 +23,7 @@ export default function FeatureItem({
         <h4 className="font-serif font-semibold text-[#4a2767] mb-2 text-lg group-hover:text-[#c3a681] transition-colors">
           {title}
         </h4>
-        <p className="text-[#666666] leading-relaxed">{description}</p>
+        <p className="text-[#555555] leading-relaxed">{description}</p>
       </div>
     </div>
   );

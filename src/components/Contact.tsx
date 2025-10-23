@@ -4,7 +4,7 @@ import SectionTitle from "./ui/SectionTitle";
 import ContactInfoItem from "./ui/ContactInfoItem";
 
 export default function Contact() {
-  const whatsappNumber = "5511999999999";
+  const whatsappNumber = "15997684325";
   const whatsappMessage =
     "Olá! Gostaria de agendar uma consulta na Enillumina.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
@@ -29,7 +29,7 @@ export default function Contact() {
         </svg>
       ),
       title: "Telefone",
-      content: ["(11) 94173-3744", "Seg - Sex: 8h às 20h"],
+      content: ["15 99768-4325", "Seg - Sex: 8h às 20h"],
     },
     {
       icon: (
@@ -86,8 +86,8 @@ export default function Contact() {
         </svg>
       ),
       title: "WhatsApp",
-      content: ["(11) 94173-3744"],
-      iconBgColor: "bg-[#25D366]",
+      content: ["15 99768-4325"],
+      iconBgColor: "bg-[#b89a75]",
     },
   ];
 
@@ -127,10 +127,9 @@ export default function Contact() {
               <h3 className="text-2xl sm:text-3xl font-serif font-semibold text-[#4a2767] mb-4">
                 Precisa de Ajuda?
               </h3>
-              <p className="text-base sm:text-lg text-[#666666] mb-8 leading-relaxed">
-                Converse conosco agora pelo WhatsApp! Nossa equipe está pronta
-                para responder suas dúvidas e agendar sua consulta de forma
-                rápida e conveniente.
+              <p className="text-base sm:text-lg text-[#555555] mb-8 leading-relaxed">
+                Converse comigo agora pelo WhatsApp! Estou pronta para responder
+                sua dúvida e agendar sua consulta de forma rápida e conveniente.
               </p>
 
               {}
@@ -165,7 +164,7 @@ export default function Contact() {
 
               {}
               <div className="mt-8 pt-6 border-t border-[#c3a681]/20">
-                <p className="text-sm sm:text-base text-[#666666] flex items-center justify-center gap-2 flex-wrap">
+                <p className="text-sm sm:text-base text-[#555555] flex items-center justify-center gap-2 flex-wrap">
                   <svg
                     className="w-5 h-5 text-[#c3a681]"
                     fill="none"

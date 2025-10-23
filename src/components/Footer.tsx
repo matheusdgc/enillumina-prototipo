@@ -9,8 +9,16 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12 text-center md:text-left">
           {}
-          <div className="space-y-4 flex flex-col items-center md:items-start">
-            <div className="mb-2">
+          <div className="space-y-3 flex flex-col items-center md:items-start">
+            <div className="mb-2 flex items-center gap-3">
+              <Image
+                src="/logo-simples-vetor.png"
+                alt="Logo Enillumina"
+                width={60}
+                height={60}
+                className="h-13 mb-1 w-auto object-contain drop-shadow-lg"
+                quality={90}
+              />
               <Image
                 src="/logo-txt-vetor.png"
                 alt="Enillumina"
@@ -21,8 +29,8 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-200 leading-relaxed text-base max-w-xs">
-              Atendimento dedicado ao acolhimento, transformação e reconexão com a
-              essência através de terapias integrativas.
+              Atendimento dedicado ao acolhimento, transformação e reconexão com
+              a essência através de terapias integrativas.
             </p>
           </div>
 
@@ -116,7 +124,7 @@ export default function Footer() {
             <ul className="space-y-3 mb-6">
               <li className="text-gray-200 text-base">
                 <a
-                  href="tel:+5511999999999"
+                  href="tel:+5515997684325"
                   className="hover:text-[#c3a681] transition-colors flex items-center gap-2 group justify-center md:justify-start"
                 >
                   <svg
@@ -132,7 +140,7 @@ export default function Footer() {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  (11) 94173-3744
+                  15 99768-4325
                 </a>
               </li>
               <li className="text-gray-200 text-base">
@@ -220,20 +228,6 @@ export default function Footer() {
             <p className="text-gray-100 text-base font-medium">
               © {currentYear} Enillumina. Todos os direitos reservados.
             </p>
-            <div className="flex space-x-8 text-base">
-              <Link
-                href="#"
-                className="text-gray-100 hover:text-[#c3a681] transition-colors font-medium"
-              >
-                Política de Privacidade
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-100 hover:text-[#c3a681] transition-colors font-medium"
-              >
-                Termos de Uso
-              </Link>
-            </div>
           </div>
 
           {}

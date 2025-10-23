@@ -68,6 +68,18 @@ h6 {
   scroll-behavior: smooth;
 }
 
+.text-body {
+  color: #444444;
+}
+
+.text-body-light {
+  color: #555555;
+}
+
+.text-muted {
+  color: #666666;
+}
+
 /* Touch optimization for mobile */
 @media (hover: none) and (pointer: coarse) {
   * {

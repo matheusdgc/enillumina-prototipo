@@ -77,7 +77,7 @@ export default function Hero() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10 sm:gap-12 lg:gap-16">
             <div className="flex-1 text-center lg:text-left w-full">
               <div className="mb-6 sm:mb-8">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-[#4a2767] mb-4 sm:mb-5 leading-relaxed">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-[#3b1c44] mb-4 sm:mb-5 leading-relaxed">
                   Bem-vindo à
                 </h1>
                 <div className="flex justify-center lg:justify-start">
@@ -92,7 +92,7 @@ export default function Hero() {
                   />
                 </div>
               </div>
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-[#666666] mb-8 sm:mb-10 leading-relaxed font-light max-w-2xl mx-auto lg:mx-0">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-[#444444] mb-8 sm:mb-10 leading-relaxed font-light max-w-2xl mx-auto lg:mx-0">
                 Atendimento dedicado ao acolhimento, transformação e reconexão
                 com a essência. Através de terapias integrativas, auxilio você a
                 ressignificar suas dores e iluminar seu próprio caminho de

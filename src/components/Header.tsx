@@ -43,23 +43,23 @@ export default function Header() {
     >
       <nav className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 sm:h-20">
-          <Link
-            href="/"
-            className="flex items-center space-x-2 sm:space-x-3 group"
-          >
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 group">
             <Image
               src="/logo-simples-vetor.png"
-              alt="Enillumina Logo"
-              width={48}
-              height={48}
-              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain group-hover:scale-110 transition-transform duration-300"
-              priority
+              alt="Logo Enillumina"
+              width={150}
+              height={38}
+              className="h-8 sm:h-10 w-auto object-contain drop-shadow-md mb-1 hover:scale-105 transition-transform duration-300"
               quality={90}
-              sizes="(max-width: 640px) 32px, (max-width: 768px) 40px, 48px"
             />
-            <div className="text-xl sm:text-2xl md:text-3xl font-serif font-semibold text-[#4a2767] group-hover:text-[#c3a681] transition-colors duration-300">
-              Enillumina
-            </div>
+            <Image
+              src="/logo-txt-vetor-purple.png"
+              alt="Enillumina"
+              width={150}
+              height={38}
+              className="h-6 sm:h-8 w-auto object-contain drop-shadow-sm hover:scale-105 transition-transform duration-300 color-black group-hover:brightness-110"
+              quality={90}
+            />
           </Link>
 
           <ul className="hidden lg:flex space-x-8 xl:space-x-10">

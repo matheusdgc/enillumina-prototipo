@@ -29,8 +29,8 @@ export default function ContactInfoItem({
             key={idx}
             className={
               idx === 0
-                ? "text-[#666666] font-medium"
-                : "text-sm text-[#666666]"
+                ? "text-[#555555] font-medium"
+                : "text-sm text-[#555555]"
             }
           >
             {line}

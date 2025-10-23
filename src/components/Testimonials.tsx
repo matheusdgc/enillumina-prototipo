@@ -8,45 +8,42 @@ export default function Testimonials() {
   const testimonials = useMemo(
     () => [
       {
-        name: "Maria Silva",
+        name: "Adelvilse",
         role: "Constelação Familiar",
         content:
           "A Constelação Familiar me ajudou a compreender padrões que se repetiam na minha vida. Eni conduziu a sessão com muita sensibilidade e profundidade. Hoje consigo me relacionar melhor com minha família e comigo mesma.",
         rating: 5,
       },
       {
-        name: "João Santos",
+        name: "Paciente",
         role: "Apometria",
-        content:
-          "Sentia bloqueios energéticos que não conseguia explicar. Após as sessões de Apometria com a Eni, experimentei uma leveza e clareza mental que não sentia há anos. Processo transformador e libertador!",
+        content: "Coletando depoimentos.",
         rating: 5,
       },
       {
-        name: "Ana Paula",
+        name: "Daiana Gois",
         role: "Hipnose",
         content:
-          "Lutei anos contra a ansiedade e padrões limitantes. A Hipnose me permitiu acessar meu subconsciente de forma segura e trabalhar questões profundas. Mudanças reais e duradouras aconteceram na minha vida.",
+          "Carregamos culpas e segredos na alma, que nos impossibilitam de ter uma vida mais leve e feliz, na sessão da hipnose pude olhar profundamente para estas questões e  ressignificar meus sentimentos. Uma vivência marcante com muitas liberações.",
         rating: 5,
       },
       {
-        name: "Carlos Eduardo",
+        name: "Paciente",
         role: "Regressão",
-        content:
-          "A Regressão foi uma experiência reveladora. Consegui acessar memórias e compreender traumas que carregava sem entender. A cura emocional que vivenciei foi profunda e me trouxe muito autoconhecimento.",
+        content: "Coletando depoimentos.",
         rating: 5,
       },
       {
-        name: "Juliana Oliveira",
+        name: "Paciente",
         role: "Práticas Xamânicas",
-        content:
-          "As práticas xamânicas com a Eni me reconectaram com minha essência espiritual. Foi uma jornada de expansão da consciência e cura através da conexão com a natureza e forças ancestrais.",
+        content: "Coletando depoimentos.",
         rating: 5,
       },
       {
-        name: "Roberto Alves",
+        name: "Antonio Carlos",
         role: "Mandalas",
         content:
-          "O trabalho com Mandalas me surpreendeu. Através da arte e da meditação, encontrei harmonização energética e equilíbrio interior. Um processo criativo e terapêutico ao mesmo tempo.",
+          "O trabalho com Mandalas me surpreendeu. Através da Magia das Mandalas, reencontrei minha autoestima e energia. É um processo criativo e terapêutico ao mesmo tempo!",
         rating: 5,
       },
     ],
@@ -78,7 +75,7 @@ export default function Testimonials() {
             O que dizem{" "}
             <span className="text-[#c3a681] italic">nossos clientes</span>
           </h2>
-          <p className="text-lg text-[#666666] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-[#555555] max-w-2xl mx-auto leading-relaxed">
             Histórias reais de pessoas que transformaram suas vidas através das
             terapias integrativas.
           </p>
@@ -114,7 +111,7 @@ export default function Testimonials() {
               </div>
 
               {}
-              <p className="text-lg md:text-xl text-[#2c2c2c] text-center mb-8 leading-relaxed italic font-serif">
+              <p className="text-lg md:text-xl text-[#333333] text-center mb-8 leading-relaxed italic font-serif">
                 &ldquo;{testimonials[activeIndex].content}&rdquo;
               </p>
 
@@ -123,7 +120,7 @@ export default function Testimonials() {
                 <h4 className="font-semibold text-[#4a2767] text-lg">
                   {testimonials[activeIndex].name}
                 </h4>
-                <p className="text-[#666666]">
+                <p className="text-[#555555]">
                   {testimonials[activeIndex].role}
                 </p>
               </div>

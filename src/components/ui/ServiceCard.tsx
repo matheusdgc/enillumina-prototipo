@@ -25,12 +25,12 @@ export default function ServiceCard({
         <h3 className="text-2xl font-serif font-semibold text-[#4a2767] mb-3 group-hover:text-[#c3a681] transition-colors">
           {title}
         </h3>
-        <p className="text-[#666666] mb-6 leading-relaxed">{description}</p>
+        <p className="text-[#555555] mb-6 leading-relaxed">{description}</p>
         <div className="space-y-2">
           {features.map((feature, idx) => (
             <div key={idx} className="flex items-center space-x-3">
               <div className="w-1.5 h-1.5 bg-[#c3a681] rounded-full"></div>
-              <span className="text-sm text-[#666666]">{feature}</span>
+              <span className="text-sm text-[#555555]">{feature}</span>
             </div>
           ))}
         </div>

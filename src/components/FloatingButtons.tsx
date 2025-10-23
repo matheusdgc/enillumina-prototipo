@@ -46,7 +46,7 @@ export default function FloatingButtons() {
       {}
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-24 right-6 z-40 bg-[#c3a681] text-white p-3.5 rounded-full shadow-2xl hover:bg-[#b39570] hover:scale-110 active:scale-95 transition-all duration-300 touch-manipulation ${
+        className={`fixed bottom-24 right-6 z-40 bg-[#c3a681] text-white p-3.5 rounded-full shadow-2xl hover:bg-[#b39570] cursor-pointer hover:scale-110 active:scale-95 transition-all duration-300 touch-manipulation ${
           showScrollTop
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-10 pointer-events-none"

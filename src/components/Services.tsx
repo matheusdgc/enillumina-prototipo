@@ -117,7 +117,7 @@ export default function Services() {
       title: "Práticas Xamânicas",
       description:
         "Vivencie práticas Xamânicas para conectar-se com sua essência e abrir caminhos para a expansão espiritual.",
-      features: ["Conexão Espiritual", "Natureza", "Rituais", "Expansão"],
+      features: ["Conexão Espiritual", "Natureza", "Rituais", "Meditação"],
     },
     {
       icon: (
@@ -137,7 +137,7 @@ export default function Services() {
       ),
       title: "Mandalas",
       description:
-        "Aprecie a magia dos Mandalas para harmonizar sua energia e promover bem-estar e autodescoberta.",
+        "Aprecie a magia dos Mandalas para harmonizar sua energia e promover bem-estar.",
       features: ["Harmonização", "Criatividade", "Meditação", "Equilíbrio"],
     },
   ];

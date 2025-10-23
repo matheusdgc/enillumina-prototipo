@@ -73,13 +73,13 @@ export default function About() {
             <h2 className="text-4xl md:text-5xl font-serif font-semibold text-[#4a2767] mb-8">
               Sobre <span className="text-[#c3a681] italic">Eni Severo</span>
             </h2>
-            <p className="text-lg text-[#666666] mb-6 leading-relaxed">
+            <p className="text-lg text-[#555555] mb-6 leading-relaxed">
               Sou Eni Aparecida Severo, formada em Administração de Empresas
               pela Faculdade de Economia São Luiz, com especializações em
               Negociação e Qualidade Total, e ampla experiência nas áreas de
               Recursos Humanos e Desenvolvimento Organizacional.
             </p>
-            <p className="text-lg text-[#666666] mb-6 leading-relaxed">
+            <p className="text-lg text-[#555555] mb-6 leading-relaxed">
               Em minha trajetória, aprofundei-me no campo do autoconhecimento e
               das terapias integrativas, com formações em Constelação Familiar
               Sistêmica e Programação Neurolinguística (PNL) pelo Instituto Criz
@@ -87,13 +87,14 @@ export default function About() {
               pelo OCE, e Movimentos de Reconexão da Alma pelo Instituto
               Estevão.
             </p>
-            <p className="text-lg text-[#666666] mb-8 leading-relaxed">
-              A partir dessa caminhada, nasceu a <b className="text-[#4a2767]">Enillumina</b>, um atendimento dedicado
-              ao acolhimento, à transformação e à reconexão com a essência. Meu
-              propósito é auxiliar cada pessoa a ressignificar suas dores e
-              iluminar seu próprio caminho, unindo técnica, sensibilidade e
-              espiritualidade em um processo profundo e humanizado de
-              desenvolvimento pessoal.
+            <p className="text-lg text-[#555555] mb-8 leading-relaxed">
+              A partir dessa caminhada, nasceu a{" "}
+              <b className="text-[#4a2767]">Enillumina</b>, um atendimento
+              dedicado ao acolhimento, à transformação e à reconexão com a
+              essência. Meu propósito é auxiliar cada pessoa a ressignificar
+              suas dores e iluminar seu próprio caminho, unindo técnica,
+              sensibilidade e espiritualidade em um processo profundo e
+              humanizado de desenvolvimento pessoal.
             </p>
 
             <div className="space-y-6 mt-10">
