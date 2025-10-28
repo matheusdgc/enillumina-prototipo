@@ -33,7 +33,7 @@ export default function FloatingButtons() {
     <>
       {}
       <a
-        href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+        href="https://wa.me/5515997684325?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-40 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group touch-manipulation"

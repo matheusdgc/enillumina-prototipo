@@ -56,7 +56,7 @@ export default function About() {
                     src="/foto-apresentacao.png"
                     alt="Eni Aparecida Severo - Terapeuta"
                     fill
-                    className="object-cover"
+                    className="object-cover object-[top]"
                     sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 33vw"
                     priority
                     quality={90}

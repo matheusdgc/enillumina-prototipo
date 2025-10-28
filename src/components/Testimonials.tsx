@@ -15,12 +15,6 @@ export default function Testimonials() {
         rating: 5,
       },
       {
-        name: "Paciente",
-        role: "Apometria",
-        content: "Coletando depoimentos.",
-        rating: 5,
-      },
-      {
         name: "Daiana Gois",
         role: "Hipnose",
         content:
@@ -28,15 +22,10 @@ export default function Testimonials() {
         rating: 5,
       },
       {
-        name: "Paciente",
+        name: "Leandra",
         role: "Regressão",
-        content: "Coletando depoimentos.",
-        rating: 5,
-      },
-      {
-        name: "Paciente",
-        role: "Práticas Xamânicas",
-        content: "Coletando depoimentos.",
+        content:
+          "A Hipnose/Regressão foi uma experiência reveladora. Consegui acessar memórias e compreender traumas que carregava sem entender. A cura emocional que vivenciei foi profunda e me trouxe muito autoconhecimento",
         rating: 5,
       },
       {
