@@ -138,7 +138,7 @@ export default function Services() {
       title: "Mandalas",
       description:
         "Aprecie a magia dos Mandalas para harmonizar sua energia e promover bem-estar.",
-      features: ["Harmonização", "Criatividade", "Meditação", "Equilíbrio"],
+      features: ["Harmonização", "Criatividade", "Expansão", "Equilíbrio"],
     },
   ];
 
