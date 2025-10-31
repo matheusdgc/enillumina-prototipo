@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -194,10 +196,33 @@ export default function Footer() {
 
         {}
         <div className="border-t-2 border-[#c3a681]/30 pt-10 mt-4">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-100 text-base font-medium">
               © {currentYear} Enillumina. Todos os direitos reservados.
             </p>
+
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open(
+                  "https://www.sitelock.com/verify.php?site=enillumina.com.br",
+                  "SiteLock",
+                  "width=600,height=600,left=160,top=170"
+                );
+              }}
+              className="hover:opacity-80 transition-opacity"
+            >
+              <Image
+                src="/selo-sitelock.br"
+                alt="SiteLock"
+                title="SiteLock - Site Seguro"
+                width={120}
+                height={48}
+                className="h-auto w-auto"
+                quality={90}
+              />
+            </a>
           </div>
 
           {}
